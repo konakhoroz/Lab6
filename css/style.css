@@ -1,0 +1,333 @@
+
+/* @import url("desktop.css") screen;
+@import url("tablet.css") screen and (min-width: 481px) and (max-width: 768px);
+@import url("mobile.css") screen and (min-width: 0px) and (max-width: 480px); */
+
+
+@media screen and (min-width: 768px){
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        /* border: 1px solid black; */
+    }
+    #wrapper{
+    
+        width:100%;
+        border-right: 5px solid blue;
+        border-bottom: 5px solid blue;
+        border-left:1px solid blue;
+        border-top:2px solid blue;
+
+        background-color:lightskyblue;
+
+    }
+
+    #searchbar{
+        display:none;
+    }
+
+   
+    .flextitle{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        
+       
+    }
+
+    .flexheader{
+        flex-grow: 1;
+    }
+
+    header{
+        padding:50px;
+        font-size:25px ;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color:rgb(151, 151, 207)
+    }
+
+
+    aside {
+        float:left;
+        width:20%;
+        
+        flex-direction: column;
+       
+    }
+
+    aside nav a {
+        display:flex;
+        background-color: pink;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color:white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        padding: 20px;
+    }
+
+    aside nav :nth-child(1){
+        border-top: 0px;
+    }
+    
+
+    main{
+        width:80%;
+        margin-left:20%;
+        overflow: auto;
+        background-color:white;
+    }
+
+   
+    main img{
+        float:right;
+        padding:20px;
+        
+    }
+
+    main .maincontent > h2{
+        color:deepskyblue;
+        padding:20px 0px;
+
+    }
+
+    main .maincontent{
+        
+        padding:20px;
+    }
+
+
+
+
+    footer{
+        background-color: rgb(151, 151, 207);
+        padding:5px;
+        text-align: center;
+    }
+   
+
+
+
+
+}
+
+
+@media screen and (max-width: 480px){
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        /* border: 1px solid black; */
+    }
+    #wrapper{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        border-right: 5px solid blue;
+        border-bottom: 5px solid blue;
+        border-left:1px solid blue;
+        border-top:20px solid blue;
+
+        background-color:lightskyblue;
+
+    }
+
+   
+    /* .flextitle{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        
+       
+    } */
+
+    /* .flexheader{
+        flex-grow: 1;
+    } */
+
+    #searchbar{
+        min-height:100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+
+    header{
+        padding:50px;
+        font-size:25px ;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color:rgb(151, 151, 207);
+        background-image: url(lighthouselogo.jpg);
+    
+    }
+
+    .flextitle img {
+        display:none;
+    }
+    
+
+    aside nav a {
+       
+        display:flex;
+        flex-direction: column;
+        background-color: lightskyblue;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color:white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        padding: 20px;
+    }
+
+    aside nav :nth-child(1){
+        border-top: 0px;
+    }
+    
+
+    main{
+        
+        width:100%;
+        overflow: auto;
+        background-color:white;
+    }
+
+   
+    main img{
+        display:none;
+        float:right;
+        padding:20px;
+        
+    }
+
+    main .maincontent > h2{
+        color:deepskyblue;
+        padding:20px 0px;
+
+    }
+
+    main .maincontent{
+        
+        padding:20px;
+    }
+
+
+
+
+    footer{
+        background-color: rgb(151, 151, 207);
+        padding:5px;
+        text-align: center;
+    }
+   
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        /* border: 1px solid black; */
+    }
+    #wrapper{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        border-right: 5px solid blue;
+        border-bottom: 5px solid blue;
+        border-left:1px solid blue;
+        border-top:2px solid blue;
+
+        background-color:lightskyblue;
+
+    }
+    #searchbar{
+        display:none;
+    }
+   
+    .flextitle{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        
+       
+    }
+
+    .flexheader{
+        flex-grow: 1;
+    }
+
+    header{
+        padding:50px;
+        font-size:25px ;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color:rgb(151, 151, 207);
+        
+    }
+
+    aside{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    aside nav a {
+       
+        
+        background-color: pink;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color:white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        padding: 20px;
+    }
+
+    aside nav :nth-child(1){
+        border-top: 0px;
+    }
+    
+
+    main{
+        
+        width:100%;
+        overflow: auto;
+        background-color:white;
+    }
+
+   
+    main img{
+        float:right;
+        padding:20px;
+        
+    }
+
+    main .maincontent > h2{
+        color:deepskyblue;
+        padding:20px 0px;
+
+    }
+
+    main .maincontent{
+        
+        padding:20px;
+    }
+
+
+
+
+    footer{
+        background-color: rgb(151, 151, 207);
+        padding:5px;
+        text-align: center;
+    }
+   
+
+
+}
+
+
